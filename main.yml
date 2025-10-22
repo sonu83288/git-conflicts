@@ -4,7 +4,7 @@ metadata:
 name: static-pv-hostpath
 spec:
 capacity:
-storage: 15i
+storage: 25i
 accessModes:
 - ReadWriteOnce
 persistentVolumeReclaimPolicy: Retain

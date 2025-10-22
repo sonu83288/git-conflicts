@@ -4,7 +4,7 @@ metadata:
 name: static-pv-hostpath
 spec:
 capacity:
-storage: 10i
+storage: 15i
 accessModes:
 - ReadWriteOnce
 persistentVolumeReclaimPolicy: Retain
@@ -12,3 +12,4 @@ storageClassName: manual
 hostPath:
 path: /mnt/data/static-pv-1
 type: DirectoryOrCreate
+

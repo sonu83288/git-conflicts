@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+name: static-pv-hostpath
+spec:
+capacity:
+storage: 10i
+accessModes:
+- ReadWriteOnce
+persistentVolumeReclaimPolicy: Retain
+storageClassName: manual
+hostPath:
+path: /mnt/data/static-pv
+type: DirectoryOrCreate
